@@ -1,0 +1,161 @@
+.education {
+  padding: 6rem 0;
+  background: linear-gradient(180deg, transparent, rgba(13, 18, 48, 0.333), transparent);
+}
+
+/* ── Timeline — same as achievements ── */
+.education__timeline {
+  max-width: 640px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.education__line {
+  position: absolute;
+  left: 28px;
+  top: 40px;
+  bottom: 40px;
+  width: 2px;
+  background: linear-gradient(to bottom, #10d9a0, #a855f7, #4f8ef7, #f59e0b);
+  opacity: 0.4;
+}
+
+/* ── Item — same as achievements__item ── */
+.education__item {
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+
+.education__item--spaced {
+  margin-bottom: 2rem;
+}
+
+/* ── Icon — same as achievements__icon ── */
+.education__icon {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  transition: all 0.25s ease;
+  z-index: 1;
+}
+
+.education__icon--hover {
+  background: linear-gradient(135deg, rgba(79, 142, 247, 0.2), rgba(168, 85, 247, 0.2));
+  border-color: #4f8ef7;
+}
+
+/* ── Card — same as achievements__content ── */
+.education__content {
+  flex: 1;
+  padding: 1.25rem 1.5rem;
+  transition: all 0.25s ease;
+}
+
+.education__content--hover {
+  border-color: rgba(79, 142, 247, 0.267);
+}
+
+/* ── Header row ── */
+.education__content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.education__title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #f0f4ff;
+  margin: 0 0 3px;
+}
+
+.education__institution {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Chips right side */
+.education__meta-chips {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+  flex-shrink: 0;
+}
+
+.education__period-chip {
+  font-family: 'Fira Code', monospace !important;
+  font-size: 11px !important;
+  background: rgba(79, 142, 247, 0.12) !important;
+  border: 1px solid rgba(79, 142, 247, 0.3) !important;
+  color: #4f8ef7 !important;
+}
+
+.education__status-chip {
+  font-size: 11px !important;
+}
+
+.education__done-chip {
+  font-size: 11px !important;
+  background: rgba(16, 217, 160, 0.1) !important;
+  border: 1px solid rgba(16, 217, 160, 0.3) !important;
+  color: #10d9a0 !important;
+}
+
+/* ── Stats boxes (labeled) ── */
+.education__stats {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 0.65rem 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  margin-top: 8px;
+}
+
+.education__stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.education__stat-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  color: rgba(180, 200, 255, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.education__stat-value {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  .education__content-header {
+    flex-direction: column;
+  }
+
+  .education__meta-chips {
+    flex-direction: row;
+    align-items: center;
+  }
+}

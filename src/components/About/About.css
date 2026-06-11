@@ -1,0 +1,121 @@
+.about {
+  padding: 6rem 0;
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.about__para {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.05rem;
+  color: rgba(220, 230, 255, 0.65);
+  line-height: 1.9;
+  margin-bottom: 1.5rem;
+}
+
+.about__strong {
+  color: #f0f4ff;
+}
+
+.about__chips {
+  margin-top: 2rem;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.about__contact-chip {
+  font-size: 13px !important;
+}
+
+.about__highlights {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.about__highlight-card {
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  cursor: default;
+  overflow: hidden;
+}
+
+.about__highlight-card:hover {
+  border-color: rgba(79, 142, 247, 0.4);
+  box-shadow: 0 8px 30px rgba(79, 142, 247, 0.1);
+  transform: translateY(-3px);
+}
+
+.about__highlight-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(79, 142, 247, 0.12), rgba(16, 217, 160, 0.08));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  margin-bottom: 10px;
+}
+
+.about__highlight-icon svg {
+  width: 32px;
+  height: 32px;
+  overflow: visible;
+}
+
+.about__svg-soft {
+  fill: rgba(79, 142, 247, 0.14);
+}
+
+.about__svg-fill {
+  fill: #4f8ef7;
+}
+
+.about__svg-fill--alt {
+  fill: #a855f7;
+}
+
+.about__svg-stroke {
+  fill: none;
+  stroke: #8fb8ff;
+  stroke-width: 2.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.about__svg-stroke--green {
+  stroke: #10d9a0;
+}
+
+.about__highlight-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: #f0f4ff;
+  margin-bottom: 4px;
+}
+
+.about__highlight-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: rgba(220, 230, 255, 0.65);
+}
+
+@media (max-width: 768px) {
+  .about__grid {
+    grid-template-columns: 1fr !important;
+  }
+}

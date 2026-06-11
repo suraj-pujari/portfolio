@@ -1,0 +1,254 @@
+.projects {
+  padding: 6rem 0;
+  scroll-margin-top: 80px;
+}
+
+/* Grid */
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 28px;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.projects__grid > * {
+  min-width: 0;
+}
+
+/* Card */
+.projects__card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.projects__card--hover {
+  transform: translateY(-6px);
+}
+
+/* Browser mockup wrapper */
+.projects__mockup-wrap {
+  padding: 14px 14px 0;
+  background: rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  min-width: 0;
+}
+
+/* ── Browser Mockup Preview ── */
+.projects__preview {
+  padding: 16px 16px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects__browser-bar {
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 8px 8px 0 0;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.projects__browser-dots {
+  display: flex;
+  gap: 5px;
+  flex-shrink: 0;
+}
+
+.projects__browser-dots span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: block;
+}
+
+.projects__browser-url {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 4px;
+  padding: 3px 10px;
+  font-family: "Fira Code", monospace;
+  font-size: 11px;
+  color: rgba(180, 200, 255, 0.4);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.projects__preview-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  gap: 6px;
+}
+
+.projects__preview-icon {
+  font-size: 2.2rem;
+  margin-bottom: 4px;
+}
+
+.projects__preview-name {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.projects__preview-url {
+  font-family: "Fira Code", monospace;
+  font-size: 11px;
+  color: rgba(180, 200, 255, 0.35);
+}
+
+/* ── Card Body ── */
+.projects__card-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.projects__badges {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.projects__card-title {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 1.35rem;
+  color: #f0f4ff;
+  margin: 0 0 0.3rem;
+}
+
+.projects__card-subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.projects__card-desc {
+  font-family: "Inter", sans-serif;
+  font-size: 13.5px;
+  color: rgba(220, 230, 255, 0.6);
+  line-height: 1.75;
+  margin-bottom: 1.2rem;
+  flex: 1;
+}
+
+.projects__tech {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+}
+
+.projects__actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.projects__btn {
+  font-size: 13px !important;
+  padding: 9px 20px !important;
+  flex: 1;
+  text-align: center;
+  justify-content: center;
+}
+
+.projects__btn-icon {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .projects {
+    padding: 4rem 0;
+    overflow-x: hidden;
+  }
+
+  .projects .container {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .projects__grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  .projects__card {
+    width: 100%;
+  }
+
+  .projects__mockup-wrap {
+    padding: 10px 10px 0;
+  }
+
+  .projects__card-body {
+    padding: 1.25rem 1rem;
+    min-width: 0;
+  }
+
+  .projects__card-title {
+    font-size: 1.25rem;
+  }
+
+  .projects__card-subtitle,
+  .projects__card-desc {
+    overflow-wrap: anywhere;
+  }
+
+  .projects .browser,
+  .projects .browser__bar,
+  .projects .browser__url-bar,
+  .projects .browser__url-text {
+    min-width: 0;
+  }
+
+  .projects .browser__bar {
+    gap: 6px;
+    padding: 0 8px;
+  }
+
+  .projects .browser__toolbar-right {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .projects .container {
+    padding: 0 0.875rem;
+  }
+
+  .projects__mockup-wrap {
+    padding: 8px 8px 0;
+  }
+
+  .projects__card-body {
+    padding: 1rem;
+  }
+}

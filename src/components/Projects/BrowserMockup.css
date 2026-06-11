@@ -1,0 +1,189 @@
+/* ── macOS Browser Window ── */
+.browser {
+  background: #1a1d2e;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ── Title Bar ── */
+.browser__bar {
+  background: #252838;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  flex-shrink: 0;
+}
+
+/* Traffic lights */
+.browser__lights {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.browser__light {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: block;
+}
+
+.browser__light--red    { background: #ff5f57; }
+.browser__light--yellow { background: #ffbd2e; }
+.browser__light--green  { background: #28c840; }
+
+/* Nav arrows */
+.browser__nav {
+  display: flex;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+/* URL bar */
+.browser__url-bar {
+  flex: 1;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 6px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 8px;
+  min-width: 0;
+}
+
+.browser__url-lock {
+  flex-shrink: 0;
+}
+
+.browser__url-text {
+  font-family: 'Fira Code', monospace;
+  font-size: 11px;
+  color: rgba(180, 200, 255, 0.45);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Right toolbar dots */
+.browser__toolbar-right {
+  display: flex;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.browser__toolbar-dot {
+  width: 14px;
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* ── Content / Screenshot Area ── */
+.browser__content {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  background: #0d1020;
+}
+
+/* Screenshot image */
+.browser__screenshot {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  display: block;
+}
+
+.browser__screenshot--loaded {
+  opacity: 1;
+}
+
+/* Bottom inner shadow for depth */
+.browser__inner-shadow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(to top, rgba(13, 16, 32, 0.7), transparent);
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* ── Skeleton loader ── */
+.browser__skeleton {
+  position: absolute;
+  inset: 0;
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: browserShimmer 1.5s ease-in-out infinite alternate;
+}
+
+.browser__skeleton-bar {
+  height: 14px;
+  border-radius: 6px;
+}
+
+.browser__skeleton-block {
+  height: 60px;
+  border-radius: 8px;
+  margin-top: 4px;
+}
+
+.browser__skeleton-line {
+  height: 10px;
+  width: 100%;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+@keyframes browserShimmer {
+  from { opacity: 0.4; }
+  to   { opacity: 0.9; }
+}
+
+/* ── Error fallback ── */
+.browser__fallback {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.browser__fallback-icon {
+  font-size: 2rem;
+  opacity: 0.5;
+}
+
+.browser__fallback-text {
+  font-family: 'Fira Code', monospace;
+  font-size: 12px;
+  opacity: 0.4;
+}
+@media (max-width: 768px) {
+  .browser__url-text {
+    font-size: 10px;
+  }
+
+  .browser__content {
+    height: 180px;
+  }
+}
