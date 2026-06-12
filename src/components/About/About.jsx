@@ -2,53 +2,46 @@ import RevealSection from "../shared/RevealSection";
 import "./About.css";
 
 const icons = {
-  mern: (
+  education: (
     <svg viewBox="0 0 48 48" aria-hidden="true">
-      <rect x="9" y="8" width="30" height="32" rx="8" className="about__svg-soft" />
-      <path d="M16 16h16M16 24h16M16 32h16" className="about__svg-stroke" />
-      <circle cx="16" cy="16" r="2.5" className="about__svg-fill" />
-      <circle cx="24" cy="24" r="2.5" className="about__svg-fill about__svg-fill--alt" />
-      <circle cx="32" cy="32" r="2.5" className="about__svg-fill" />
-      <path d="M14 38c4-3 7-3 10 0s6 3 10 0" className="about__svg-stroke about__svg-stroke--green" />
+      <path d="M8 17 24 9l16 8-16 8L8 17Z" className="about__svg-soft" />
+      <path d="M8 17 24 9l16 8-16 8L8 17Z" className="about__svg-stroke" />
+      <path d="M15 22v8c4 4 14 4 18 0v-8" className="about__svg-stroke about__svg-stroke--green" />
+      <path d="M40 17v12" className="about__svg-stroke" />
     </svg>
   ),
-  dsa: (
+  builder: (
     <svg viewBox="0 0 48 48" aria-hidden="true">
-      <path d="M17 15 9 24l8 9M31 15l8 9-8 9" className="about__svg-stroke" />
-      <path d="M27 11 21 37" className="about__svg-stroke about__svg-stroke--green" />
-      <circle cx="24" cy="24" r="4" className="about__svg-fill" />
+      <rect x="9" y="11" width="30" height="26" rx="6" className="about__svg-soft" />
+      <path d="M9 18h30" className="about__svg-stroke" />
+      <path d="M16 29h7l5-8 4 11" className="about__svg-stroke about__svg-stroke--green" />
+      <circle cx="16" cy="15" r="1.6" className="about__svg-fill" />
+      <circle cx="22" cy="15" r="1.6" className="about__svg-fill about__svg-fill--alt" />
     </svg>
   ),
-  security: (
+  problem: (
     <svg viewBox="0 0 48 48" aria-hidden="true">
-      <path d="M24 7 38 12v10c0 9-5.6 15.4-14 19-8.4-3.6-14-10-14-19V12l14-5Z" className="about__svg-soft" />
-      <path d="M24 7 38 12v10c0 9-5.6 15.4-14 19-8.4-3.6-14-10-14-19V12l14-5Z" className="about__svg-stroke" />
-      <rect x="17" y="23" width="14" height="10" rx="3" className="about__svg-fill" />
-      <path d="M20 23v-4a4 4 0 0 1 8 0v4" className="about__svg-stroke about__svg-stroke--green" />
+      <circle cx="14" cy="16" r="5" className="about__svg-fill" />
+      <circle cx="34" cy="16" r="5" className="about__svg-fill about__svg-fill--alt" />
+      <circle cx="24" cy="34" r="5" className="about__svg-fill" />
+      <path d="M18 18h12M31 20l-5 10M17 20l5 10" className="about__svg-stroke about__svg-stroke--green" />
     </svg>
   ),
-  git: (
+  focus: (
     <svg viewBox="0 0 48 48" aria-hidden="true">
-      <path d="M15 12v12c0 6 4 10 10 10h8" className="about__svg-stroke" />
-      <path d="M15 24h15" className="about__svg-stroke about__svg-stroke--green" />
-      <circle cx="15" cy="12" r="5" className="about__svg-fill" />
-      <circle cx="30" cy="24" r="5" className="about__svg-fill about__svg-fill--alt" />
-      <circle cx="35" cy="34" r="5" className="about__svg-fill" />
+      <path d="M24 8a16 16 0 1 0 16 16" className="about__svg-stroke" />
+      <path d="M24 15a9 9 0 1 0 9 9" className="about__svg-stroke about__svg-stroke--green" />
+      <circle cx="24" cy="24" r="4" className="about__svg-fill about__svg-fill--alt" />
+      <path d="M31 17 40 8M34 8h6v6" className="about__svg-stroke" />
     </svg>
   ),
 };
 
 const highlights = [
-  { icon: icons.mern, title: "MERN Developer", desc: "React, Node, Express, MongoDB" },
-  { icon: icons.dsa, title: "Java + DSA", desc: "Problem solving enthusiast" },
-  { icon: icons.security, title: "Security-Aware", desc: "JWT, Auth, Best Practices" },
-  { icon: icons.git, title: "Git & GitHub", desc: "Version control, collaboration" },
-];
-
-const contactInfo = [
-  "📍 Pune, India",
-  "surajpujari8383@gmail.com",
-  "+91 8382038383",
+  { icon: icons.education, title: "MCA Student", desc: "Learning with practical, project-based work" },
+  { icon: icons.builder, title: "Project Builder", desc: "Turning ideas into clean user experiences" },
+  { icon: icons.problem, title: "Problem Solver", desc: "Breaking complex tasks into simple steps" },
+  { icon: icons.focus, title: "Growth Focused", desc: "Improving through feedback and consistency" },
 ];
 
 export default function About() {
@@ -66,48 +59,33 @@ export default function About() {
           </div>
         </RevealSection>
 
-       <div className="about__grid grid-2col">
-  <RevealSection delay={100}>
-    <div className="about__text">
-      <p className="about__para">
-        I'm <strong className="about__strong">Suraj Pujari</strong>, currently pursuing a
-        <strong className="about__strong"> Master of Computer Applications (MCA)</strong>
-        at <strong className="about__strong">MIT Vishwaprayag University</strong> and
-        building my career as a
-        <strong className="about__strong"> MERN Stack Developer</strong> with a strong
-        interest in creating modern, responsive, and user-focused web applications.
-      </p>
+        <div className="about__grid grid-2col">
+          <RevealSection delay={100}>
+            <div className="about__text">
+              <p className="about__para">
+                I'm <strong className="about__strong">Suraj Pujari</strong>, currently
+                pursuing a
+                <strong className="about__strong"> Master of Computer Applications (MCA)</strong>
+                at <strong className="about__strong"> MIT Vishwaprayag University</strong>.
+                My interest in technology started during my BCA journey and grew stronger
+                through hands-on project work.
+              </p>
 
-      <p className="about__para">
-        My journey in technology started during my BCA studies and gradually evolved into
-        a passion for full-stack development and problem solving. I actively work with
-        <strong className="about__strong">
-          {" "}React.js, Node.js, Express.js, MongoDB, JavaScript, Java, MySQL, REST APIs,
-          and JWT Authentication
-        </strong>
-        , continuously improving my skills through hands-on projects and practical
-        development experience.
-      </p>
+              <p className="about__para">
+                I enjoy understanding real problems, planning simple user flows, and
+                building projects that feel useful in everyday scenarios. My goal is to
+                keep improving as a developer who writes clean code, communicates clearly,
+                and contributes to reliable products.
+              </p>
 
-      <p className="about__para">
-        Through projects like
-        <strong className="about__strong"> StudentHub</strong> and
-        <strong className="about__strong"> HomeXpress</strong>, I have gained experience
-        in developing complete web applications, designing responsive user interfaces,
-        building secure backend systems, and working with databases. Beyond development,
-        I enjoy solving DSA problems using Java, exploring cybersecurity concepts, and
-        collaborating on innovative projects that create real-world impact.
-      </p>
-
-      <div className="about__chips">
-        {contactInfo.map((item) => (
-          <span key={item} className="chip chip--green about__contact-chip">
-            {item}
-          </span>
-        ))}
-      </div>
-    </div>
-  </RevealSection>
+              <p className="about__para">
+                Projects like <strong className="about__strong">StudentHub</strong> and
+                <strong className="about__strong"> HomeXpress</strong> helped me learn how
+                to move from an idea to a complete, presentable product with better
+                structure, polish, and attention to detail.
+              </p>
+            </div>
+          </RevealSection>
 
           <RevealSection delay={200}>
             <div className="about__highlights">

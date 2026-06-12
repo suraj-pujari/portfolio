@@ -327,3 +327,41 @@
   padding: 9px 20px !important;
   font-size: 13px !important;
 }
+
+@media (max-width: 768px) {
+  .certifications {
+    padding: 3.25rem 0;
+  }
+
+  .certifications .container {
+    padding: 0 1rem;
+  }
+
+  .certifications__subtitle {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .certifications__grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+
+  .certifications__preview {
+    height: 190px;
+  }
+
+  .certifications__body {
+    padding: 1.1rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .certifications {
+    padding: 2.9rem 0;
+  }
+
+  .certifications__preview {
+    height: 180px;
+  }
+}

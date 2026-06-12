@@ -179,40 +179,74 @@
 }
 
 .navbar__resume-btn {
-  padding: 6px 16px;
-  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 36px;
+  padding: 0 15px;
+  border-radius: 999px;
   font-family: 'Inter', sans-serif;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
-  border: none;
-  background: linear-gradient(135deg, #4f8ef7, #a855f7);
+  border: 1px solid rgba(143, 183, 255, 0.22);
+  background:
+    linear-gradient(135deg, rgba(79, 142, 247, 0.96), rgba(168, 85, 247, 0.96));
   color: #fff;
   margin-left: 8px;
-  transition: opacity 0.2s ease;
+  box-shadow: 0 12px 30px rgba(79, 142, 247, 0.16);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease,
+    opacity 0.2s ease;
 }
 
 .navbar__resume-btn:hover {
-  opacity: 0.85;
+  transform: translateY(-1px);
+  border-color: rgba(240, 244, 255, 0.28);
+  box-shadow: 0 16px 38px rgba(168, 85, 247, 0.22);
+  opacity: 1;
+}
+
+.navbar__resume-icon {
+  width: 17px;
+  height: 17px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.9;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
 }
 
 .navbar__mobile-resume-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   background: linear-gradient(135deg, #4f8ef7, #a855f7);
-  border: none;
+  border: 1px solid rgba(143, 183, 255, 0.22);
   cursor: pointer;
   padding: 12px 1.5rem;
-  text-align: left;
   font-family: 'Inter', sans-serif;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
   color: #fff;
   margin: 8px 1.5rem 4px;
   border-radius: 10px;
-  transition: opacity 0.2s ease;
+  box-shadow: 0 14px 34px rgba(79, 142, 247, 0.16);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    opacity 0.2s ease;
 }
 
 .navbar__mobile-resume-btn:hover {
-  opacity: 0.85;
+  transform: translateY(-1px);
+  box-shadow: 0 18px 40px rgba(168, 85, 247, 0.2);
+  opacity: 1;
 }
 
 /* ── Responsive ── */

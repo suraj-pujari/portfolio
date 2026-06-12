@@ -13,7 +13,7 @@ export default function Certifications() {
       <div className="container">
         <RevealSection>
           <div className="section-header">
-            <span className="chip chip--green">Certifications</span>
+            <span className="chip chip--green">Certificates</span>
             <h2 className="section-title">Credentials earned</h2>
             <p className="certifications__subtitle">Click any certificate to view it in full</p>
             <div

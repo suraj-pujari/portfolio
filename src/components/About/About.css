@@ -27,17 +27,6 @@
   color: #f0f4ff;
 }
 
-.about__chips {
-  margin-top: 2rem;
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
-.about__contact-chip {
-  font-size: 13px !important;
-}
-
 .about__highlights {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -115,7 +104,27 @@
 }
 
 @media (max-width: 768px) {
+  .about {
+    padding: 3.25rem 0;
+  }
+
   .about__grid {
     grid-template-columns: 1fr !important;
+    gap: 2rem;
+  }
+
+  .about__para {
+    margin-bottom: 1.15rem;
+    line-height: 1.75;
+  }
+
+  .about__highlight-card {
+    padding: 1.2rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .about {
+    padding: 2.9rem 0;
   }
 }

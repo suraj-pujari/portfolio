@@ -150,6 +150,10 @@
 
 /* ── Responsive ── */
 @media (max-width: 640px) {
+  .education {
+    padding: 3.25rem 0;
+  }
+
   .education__content-header {
     flex-direction: column;
   }
@@ -157,5 +161,23 @@
   .education__meta-chips {
     flex-direction: row;
     align-items: center;
+  }
+
+  .education__item {
+    gap: 14px;
+  }
+
+  .education__item--spaced {
+    margin-bottom: 1.5rem;
+  }
+
+  .education__content {
+    padding: 1.1rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .education {
+    padding: 2.9rem 0;
   }
 }

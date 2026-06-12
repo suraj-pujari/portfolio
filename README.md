@@ -1,78 +1,69 @@
 # Suraj Pujari — Portfolio
 
-React-based portfolio with fully separated component architecture.
+Personal portfolio website for **Suraj Pujari**, a MERN Stack Developer and MCA student from Pune, India.
 
-## Project Structure
+The site showcases my profile, education, technical skills, projects, certificates, resume preview, and contact links in a responsive React interface.
 
-```
-src/
-├── components/
-│   ├── Navbar/
-│   │   ├── Navbar.jsx
-│   │   └── Navbar.css
-│   ├── Hero/
-│   │   ├── Hero.jsx
-│   │   └── Hero.css
-│   ├── About/
-│   │   ├── About.jsx
-│   │   └── About.css
-│   ├── Education/
-│   │   ├── Education.jsx
-│   │   └── Education.css
-│   ├── Skills/
-│   │   ├── Skills.jsx
-│   │   ├── SkillCard.jsx
-│   │   └── Skills.css
-│   ├── Projects/
-│   │   ├── Projects.jsx
-│   │   ├── FeaturedProject.jsx
-│   │   ├── ProjectCard.jsx
-│   │   └── Projects.css
-│   ├── Achievements/
-│   │   ├── Achievements.jsx
-│   │   └── Achievements.css
-│   ├── Certifications/
-│   │   ├── Certifications.jsx
-│   │   ├── CertCard.jsx
-│   │   ├── CertModal.jsx
-│   │   └── Certifications.css
-│   ├── Contact/
-│   │   ├── Contact.jsx
-│   │   └── Contact.css
-│   ├── Footer/
-│   │   ├── Footer.jsx
-│   │   └── Footer.css
-│   └── shared/
-│       ├── RevealSection.jsx
-│       └── RevealSection.css
-├── constants/
-│   ├── colors.js       ← All color variables
-│   └── data.js         ← All content data (skills, projects, certs, etc.)
-├── hooks/
-│   └── index.js        ← useTyping, useScrollReveal
-├── styles/
-│   └── globals.css     ← Global styles + animations
-├── App.jsx
-└── main.jsx
-```
+## Live Demo
 
-## Setup
+[View Portfolio](https://surajpujari.dev/)
 
-```bash
-npm install
-npm run dev
-```
+## Highlights
 
-## Build
+- Responsive portfolio design for desktop and mobile
+- Hero section with profile image, typing role text, and social links
+- About section with short personal introduction
+- Education timeline
+- Premium skills section with grouped technical skills
+- Project showcase with live demo links and screenshots
+- Certificates section with image preview modal
+- Resume viewer with PDF preview, zoom controls, open PDF, and download option
+- Footer with contact details, navigation, GitHub, LinkedIn, and LeetCode
+- SEO-ready setup with meta tags, Open Graph, Twitter cards, schema data, sitemap, robots.txt, and favicon
 
-```bash
-npm run build
-```
+## Portfolio Sections
 
-## Key Notes
+- Home
+- About
+- Skills
+- Projects
+- Certificates
+- Resume
+- Contact
 
-- **No inline styles** — all styling is in dedicated `.css` files per component
-- **Data centralized** in `src/constants/data.js` — update content from one place
-- **Colors centralized** in `src/constants/colors.js`
-- **Hooks** in `src/hooks/index.js` — `useTyping` and `useScrollReveal`
-- All **animations** (orbDrift, blink, ringPulse, etc.) are in `globals.css`
+## Tech Stack
+
+- React
+- Vite
+- JavaScript
+- CSS
+- PDF.js
+- Vercel
+
+## Projects Included
+
+- **StudentHub** — Academic Project Collaboration Platform
+  Live: [studenthub-suraj.vercel.app](https://studenthub-suraj.vercel.app/)
+
+- **HomeXpress** — Online Home Services Portal
+  Live: [HomeXpress.com](https://suraj-pujari.github.io/HomeXpress.com/)
+
+- **Simon Says Game** — Memory-Based Interactive Game
+  Live: [simon-says-games.vercel.app](https://simon-says-games.vercel.app/)
+
+## Purpose
+
+This repository represents my personal developer portfolio. It is mainly created to present my work, technical background, certificates, resume, and contact links in one place.
+
+The website is designed as a professional profile for recruiters, collaborators, and visitors who want to quickly understand my skills, projects, and development journey.
+
+## Contact
+
+- GitHub: [suraj-pujari](https://github.com/suraj-pujari)
+- LinkedIn: [suraj-pujari83](https://www.linkedin.com/in/suraj-pujari83/)
+- LeetCode: [suraj-pujari](https://leetcode.com/u/suraj-pujari/)
+- Email: [surajpujari8383@gmail.com](mailto:surajpujari8383@gmail.com)
+
+## Author
+
+Designed and developed by **Suraj Pujari**.

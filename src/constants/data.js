@@ -2,32 +2,34 @@ import { COLORS } from "./colors";
 
 export const SKILLS = {
   Frontend: [
-    { name: "React", icon: "⚛️", level: 85 },
-    { name: "JavaScript", icon: "JS", level: 88 },
-    { name: "HTML & CSS", icon: "🎨", level: 90 },
-    { name: "Bootstrap", icon: "B", level: 80 },
+    { name: "React", mark: "RE", kind: "UI library" },
+    { name: "JavaScript", mark: "JS", kind: "Language" },
+    { name: "HTML & CSS", mark: "UI", kind: "Web fundamentals" },
+    { name: "Bootstrap", mark: "BT", kind: "CSS framework" },
   ],
   Backend: [
-    { name: "Node.js", icon: "🟢", level: 80 },
-    { name: "Express.js", icon: "EX", level: 78 },
-    { name: "Spring Boot", icon: "🌱", level: 72 },
-    { name: "REST APIs", icon: "🔌", level: 85 },
+    { name: "Node.js", mark: "ND", kind: "Runtime" },
+    { name: "Express.js", mark: "EX", kind: "API framework" },
+    { name: "REST APIs", mark: "API", kind: "Architecture" },
+    { name: "JWT Auth", mark: "JWT", kind: "Authentication" },
   ],
   Database: [
-    { name: "MongoDB", icon: "🍃", level: 80 },
-    { name: "MySQL", icon: "🐬", level: 75 },
+    { name: "MongoDB", mark: "MDB", kind: "NoSQL database" },
+    { name: "Mongoose", mark: "MNG", kind: "MongoDB ODM" },
+    { name: "MySQL", mark: "SQL", kind: "Relational database" },
   ],
-  "Tools & Cloud": [
-    { name: "Git & GitHub", icon: "🐙", level: 88 },
-    { name: "AWS (Basics)", icon: "☁️", level: 60 },
-    { name: "Vercel", icon: "▲", level: 85 },
-    { name: "Figma", icon: "🎭", level: 70 },
+  "Tools & Platforms": [
+    { name: "Git & GitHub", mark: "GIT", kind: "Version control" },
+    { name: "Vercel", mark: "VC", kind: "Deployment" },
+    { name: "AWS Basics", mark: "AWS", kind: "Cloud basics" },
+    { name: "Postman", mark: "PM", kind: "API testing" },
+    { name: "Hoppscotch", mark: "HOP", kind: "API testing" },
+    { name: "Linux", mark: "LX", kind: "CLI & System Tools" },
   ],
-  Programming: [
-    { name: "Java", icon: "☕", level: 82 },
-    { name: "DSA", icon: "🧩", level: 78 },
-    { name: "JWT Auth", icon: "🔐", level: 80 },
-    { name: "Linux", icon: "🐧", level: 65 },
+  "Languages & CS": [
+    { name: "Java", mark: "JV", kind: "Language" },
+    { name: "DSA", mark: "DSA", kind: "Core CS" },
+    { name: "Problem Solving", mark: "PS", kind: "Practice" },
   ],
 };
 
@@ -48,8 +50,8 @@ export const PROJECTS = [
     ],
     tech: ["React", "Spring Boot", "MySQL", "JWT Auth"],
     github: "https://github.com/suraj-pujari/studenthub",
-    live: "https://studenthub-teal.vercel.app/",
-    screenshot: "https://github.com/suraj-pujari/Assets/blob/main/StudentHub.png?raw=true",
+    live: "https://studenthub-suraj.vercel.app/",
+    screenshot: "/assets/studenthub.png",
     featured: true,
     status: "completed",
     color: COLORS.primary,
@@ -71,10 +73,31 @@ export const PROJECTS = [
     tech: ["React", "Spring Boot", "MySQL"],
     github: "https://github.com/suraj-pujari/HomeXpress.com",
     live: "https://suraj-pujari.github.io/HomeXpress.com/",
-    screenshot: "https://github.com/suraj-pujari/Assets/blob/main/HomeXpress.png?raw=true",
+    screenshot: "/assets/homexpress.png",
     featured: false,
     status: "completed",
     color: COLORS.accentGreen,
+  },
+  {
+    id: 3,
+    title: "Simon Says Game",
+    subtitle: "Memory-Based Interactive Game",
+    description:
+      "A browser-based memory game where players repeat an increasing color sequence. Built with interactive game-state logic, score tracking, and responsive visual feedback.",
+    features: [
+      "Sequence Generation",
+      "User Input Validation",
+      "Highest Score Tracking",
+      "Interactive Color Feedback",
+      "Game Reset Flow",
+    ],
+    tech: ["HTML", "CSS", "JavaScript"],
+    github: "https://github.com/suraj-pujari/simon-says-games",
+    live: "https://simon-says-games.vercel.app/",
+    screenshot: "/assets/simon-says-game.png",
+    featured: false,
+    status: "completed",
+    color: "#facc15",
   },
 ];
 
@@ -90,8 +113,7 @@ export const CERTS = [
     description:
       "Completed Alpha DSA with Java course by Apna College — covering arrays, linked lists, trees, graphs, recursion, sorting, and problem-solving patterns.",
     skills: ["Java", "Arrays", "LinkedList", "Trees", "Graphs", "Recursion", "Sorting"],
-    imageUrl:
-      "https://github.com/suraj-pujari/Assets/blob/main/DSA%20Certificate.jpg?raw=true",
+    imageUrl: "/assets/dsa-certificate.jpg",
     credentialUrl: "",
   },
   {
@@ -105,8 +127,7 @@ export const CERTS = [
     description:
       "Completed Sigma 5 Development course — full-stack web development with MongoDB, Express, React, Node.js, MySQL, Git & GitHub, REST APIs and deployment.",
     skills: ["React", "Node.js", "MongoDB", "Express", "MySQL", "Git", "GitHub", "REST APIs"],
-    imageUrl:
-      "https://github.com/suraj-pujari/Assets/blob/main/DSA%20Certificate.jpg?raw=true",
+    imageUrl: "/assets/dsa-certificate.jpg",
     credentialUrl: "",
   },
   {
@@ -121,8 +142,7 @@ export const CERTS = [
       "Secured Runner-Up at MIT Vishwaprayag University College Level Hackathon 2025 with StudentHub — an academic collaboration platform built by team CollabCrew.",
     skills: ["React", "Spring Boot", "MySQL", "Teamwork", "Problem Solving"],
     credentialUrl: "",
-    imageUrl:
-      "https://github.com/suraj-pujari/Assets/blob/main/MIT%20Hackathon%20Win.jpg?raw=true",
+    imageUrl: "/assets/mit-hackathon.jpg",
   },
   {
     id: 4,
@@ -136,8 +156,21 @@ export const CERTS = [
       "2-month Ethical Hacking course by WsCube Tech — penetration testing, vulnerability assessment, network security, and cybersecurity hands-on projects. Grade: A+",
     skills: ["Penetration Testing", "Network Security", "OWASP", "Kali Linux", "Vulnerability Assessment"],
     credentialUrl: "https://www.wscubetech.com/verify-certificate",
-    imageUrl:
-      "https://github.com/suraj-pujari/Assets/blob/main/%F0%9F%A7%91%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BB%20Ethical%20Hacking%20Certificate.jpg?raw=true",
+    imageUrl: "/assets/ethical-hacking.jpg",
+  },
+  {
+    id: 5,
+    title: "Dexter Innofest 2023-24",
+    issuer: "Punyashlok Ahilyadevi Holkar Solapur University",
+    date: "Mar 2024",
+    status: "issued",
+    color: "#38bdf8",
+    category: "Competition",
+    description:
+      "Participated in the National Level Programming / Paper Presentation Competition at Dexter Innofest 2023-24, organized by the Department of Computer Science and Computer Applications.",
+    skills: ["Programming", "Paper Presentation", "Problem Solving"],
+    credentialUrl: "",
+    imageUrl: "/assets/dexter-innofest.jpg",
   },
 ];
 
@@ -209,11 +242,11 @@ export const NAV_ITEMS = [
   "About",
   "Skills",
   "Projects",
-  "Certs",
+  "Certificates",
 ];
 
 export const SOCIAL_LINKS = [
-  { label: "GitHub", url: "https://github.com/suraj-pujari", icon: "⬡" },
-  { label: "LinkedIn", url: "https://www.linkedin.com/in/suraj-pujari83/", icon: "in" },
-  { label: "Email", url: "mailto:surajpujari8383@gmail.com", icon: "✉" },
+  { label: "GitHub", url: "https://github.com/suraj-pujari" },
+  { label: "LinkedIn", url: "https://www.linkedin.com/in/suraj-pujari83/" },
+  { label: "LeetCode", url: "https://leetcode.com/u/suraj-pujari/" },
 ];

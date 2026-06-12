@@ -127,8 +127,13 @@
 .hero__cta-icon svg {
   width: 18px;
   height: 18px;
+  display: block;
   fill: currentColor;
-  color: #d7fff2;
+  color: #fff;
+}
+
+.hero__whatsapp-icon {
+  flex-shrink: 0;
 }
 
 /* Socials */
@@ -389,7 +394,16 @@
   .hero {
     min-height: auto;
     padding-top: 96px;
-    padding-bottom: 4.5rem;
+    padding-bottom: 2.75rem;
+  }
+
+  .section-header {
+    margin-bottom: 2.35rem;
+  }
+
+  .section-title {
+    font-size: clamp(2rem, 8vw, 2.7rem);
+    line-height: 1.12;
   }
 
   .hero__scroll-indicator {
@@ -398,7 +412,7 @@
 
   .hero__container {
     grid-template-columns: 1fr !important;
-    gap: 2.25rem;
+    gap: 1.75rem;
     text-align: center;
   }
 
@@ -431,7 +445,7 @@
 
   .hero__cta {
     width: min(100%, 340px);
-    margin-bottom: 1.75rem;
+    margin-bottom: 1.45rem;
     justify-content: center;
   }
 
@@ -464,10 +478,15 @@
   }
 
   .hero__avatar-wrap {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    place-items: center;
+    justify-self: center;
+    width: 220px;
+    height: 220px;
+    margin-left: auto;
+    margin-right: auto;
     order: -1;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.15rem;
   }
 
   .hero__avatar-ring {
@@ -478,18 +497,37 @@
   .hero__avatar-inner {
     width: 132px;
     height: 132px;
+    border-width: 3px;
   }
 }
 
 @media (max-width: 420px) {
   .hero {
     padding-top: 88px;
-    padding-bottom: 4rem;
+    padding-bottom: 2.4rem;
   }
 
   .hero__container {
-    gap: 2rem;
+    gap: 1.6rem;
     padding: 0 1.25rem;
+  }
+
+  .hero__avatar-wrap {
+    width: 190px;
+    height: 190px;
+    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero__avatar-ring {
+    width: 146px;
+    height: 146px;
+  }
+
+  .hero__avatar-inner {
+    width: 120px;
+    height: 120px;
   }
 
   .hero__heading {
